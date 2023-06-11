@@ -1,4 +1,4 @@
-# NIF for Elixir.EWeb3
+# NIF for Elixir.SignWeb3
 
 ## To build the NIF module:
 
@@ -8,7 +8,7 @@
 
 ```elixir
 defmodule CWeb3 do
-    use Rustler, otp_app: :c_web3, crate: "web3"
+    use Rustler, otp_app: :sign_web3, crate: "web3"
 
     # When your NIF is loaded, it will override this function.
     def add(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
