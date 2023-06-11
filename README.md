@@ -7,7 +7,7 @@
 ## To load the NIF:
 
 ```elixir
-defmodule CWeb3 do
+defmodule SignWeb3 do
     use Rustler, otp_app: :sign_web3, crate: "web3"
 
     # When your NIF is loaded, it will override this function.
